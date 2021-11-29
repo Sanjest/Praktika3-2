@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <math.h>
+int main(){
+float sideA;
+float sideB;
+float sideC;
+float precision=0.01;
+sideA = 10,1;
+sideB = 20,5;
+sideC = 4;
+float differenceAB=abs(sideA-sideB);
+float differenceAC=abs(sideA-sideC);
+float differenceBC=abs(sideB-sideC);
+printf("differenceAB: %f\n", differenceAB);
+if((differenceAB<precision) &&
+(differenceAC<precision) &&
+(differenceBC<precision)){
+printf("YES");
+}
+else{
+printf("NO");
+}
+}
